@@ -8,7 +8,31 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
+	<form>
+		<label for="fname">Frist Name:</label>
+		<input type="text" id="fname" value=""><br>
+		<label for="fname">Last Name:</label>
+		<input type="text" id="lname" value=""><br>
+		<label for="fname">Phone Number:</label>
+		<input type="text" id="pnumber" value=""><br>
+		<label for="fname">Email ID:</label>
+		<input type="text" id="Email" value=""><br>
+		<button onclick="myFunction()">Submit</button>
+	</form>
+    <script>
+		function myFunction() {
+			var x1=document.getElementById('fname').value;
+			var x2=document.getElementById('lname').value;
+			var x3=document.getElementById('pnumber').value;
+			var x4=document.getElementById('Email').value;
+			
+			
+			alert(" Frist Name: "
+				  +x1+"\n Last Name: "
+				  +x2+"\n Phone Number: "
+				  +x3+"\n Email ID: "
+				  +x4);
+		}
 </script>
 
 </body>
